@@ -1,0 +1,41 @@
+/*
+* @Author: 周海明
+* @Date:   2018-01-17 12:28:36
+* @Last Modified by:   周海明
+* @Last Modified time: 2018-01-22 22:31:53
+*/
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, button, textarea, blockquote, th, td, p{margin:0; padding:0;}
+
+li{list-style:none;}
+a{
+	text-decoration:none;
+	color: inherit;
+	outline: 0;
+}
+body{
+	background-color: #fff;
+    color: #333;
+    font-size: 12px;
+    font-family: Arial,'Microsoft YaHei';
+}
+body,html{
+	height: 100%;
+	position: relative;
+}
+img{vertical-align:middle;border:none;}
+a,input{outline:none;}
+em,i,s{font-style:normal;display: inline-block;}
+.clear::after{content:""; display:block; clear:both; height:0; visibility:hidden;}
+table{border-collapse:collapse;}
+
+.border0{border:none;}
+.fl{float:left;}
+.fr{float:right;display: inline;}
+
+.w{    
+	width: 1200px;
+    margin: 0 auto;
+}
+body, button, input, select, textarea {
+    font: 12px/1.6 tahoma,arial,sans-serif;
+}

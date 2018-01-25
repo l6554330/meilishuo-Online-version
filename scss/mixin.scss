@@ -1,0 +1,65 @@
+/*
+* @Author: 周海明
+* @Date:   2018-01-18 10:29:10
+* @Last Modified by:   周海明
+* @Last Modified time: 2018-01-22 09:42:46
+*/
+@mixin scale($scaleX:1.1,$scaleY:1.1){
+    -webkit-transform: scaleX($scaleX) scaleY($scaleY);
+    -moz-transform: scaleX($scaleX) scaleY($scaleY);
+    -ms-transform: scaleX($scaleX) scaleY($scaleY);
+    -o-transform: scaleX($scaleX) scaleY($scaleY);
+    transform: scaleX($scaleX) scaleY($scaleY);
+}
+@mixin transform($transform:all 3.5s){
+	-webkit-transition: $transform linear;
+    -moz-transition:  $transform linear;
+    -o-transition:  $transform linear;
+    transition: $transform linear; 
+}
+// @translate = [-50%,0,0] ;
+@mixin translate3d($a:-50%,$b:0,$c:0){
+	-webkit-transform: translate3d($a,$b,$c);
+	-moz-transform: translate3d($a,$b,$c);
+	-ms-transform: translate3d($a,$b,$c);
+	-o-transform: translate3d($a,$b,$c);
+	transform: translate3d($a,$b,$c);
+}
+@mixin rotate($deg:90deg){
+    transform: rotate($deg);
+    -webkit-transform: rotate($deg);
+    -ms-transform: rotate($deg);
+    -o-transform: rotate($deg);
+    -moz-transform: rotate($deg);
+}
+@mixin radius($px:100px){
+    border-radius: $px;
+    -moz-border-radius: $px;
+    -webkit-border-radius: $px;
+}
+@mixin shadow($a:inset,$b:0,$c:5px,$d:10px,$l:-5px,$e: #191919,$f:0,$g:1px,$h:0,$i:0,$j:#444){ 
+    box-shadow: $a $b $c $d $l $e, $f $g $h $i $j;
+    -moz-box-shadow: $a $b $c $d $l $e, $f $g $h $i $j;
+    -webkit-box-shadow: $a $b $c $d $l $e, $f $g $h $i $j;
+}
+@mixin opacity($opacity:.9){ 
+    -webkit-opacity: $opacity;
+    -moz-opacity: $opacity;
+    -khtml-opacity: $opacity;
+    opacity: $opacity;  
+}
+@mixin property($property:border-color){ 
+    -webkit-transition-property: $property;
+    -moz-transition-property: $property;
+    -o-transition-property: $property;
+    transition-property: $property;  
+}
+@mixin duration($duration:.2s){ 
+    -webkit-transition-duration: $duration;
+    -moz-transition-duration: $duration;
+    -o-transition-duration: $duration;
+    transition-duration: $duration;
+} 
+
+    
+      

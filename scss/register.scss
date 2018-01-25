@@ -1,0 +1,183 @@
+/*
+* @Author: 周海明
+* @Date:   2018-01-19 15:24:35
+* @Last Modified by:   周海明
+* @Last Modified time: 2018-01-25 12:14:57
+*/
+.pwd_text, .short_text {
+    background: none!important;
+    border: 1px solid #ccc;
+    padding: 0 6px;
+}
+.logo_wrap{
+	width: 100%;
+    background-color: $bg2;
+    padding: 20px 0;
+    .logo{
+    	width: 1200px;
+		margin: 0 auto;
+		position: relative;
+		a{
+		    background: url(https://s10.mogucdn.com/mlcdn/c45406/170608_4abia54942c229cgg69f073b9g23d_408x104.png) no-repeat;
+		    display: inline-block;
+		    width: 220px;
+		    height: 52px;
+		    background-size: 100%;
+		}
+		span{
+		    position: absolute;
+		    top: 12px;
+		    display: inline-block;
+		    height: 28px;
+		    width: 861px;
+		    margin-left: 20px;
+		    background-color: #ffefef;
+		    border: 1px solid #ffc0cc;
+		    text-align: center;
+		    line-height: 28px;
+		    font-size: 11px;
+		    color: #666;
+		    vertical-align: center;
+		}
+    }
+}
+.eb_mod_box{
+	display: none;
+}
+.contents{
+    background: url(http://s17.mogucdn.com/p2/170105/upload_541i9di2b3icf9j13f24e0bg7b1i6_1920x600.png) no-repeat center center;
+    width: 100%;
+    .lg_banner{
+	    width: 62.5%;
+	    float: left;
+	    display: inline;
+	    height: 600px;
+	    .banner1{
+		    display: block;
+		    width: 700px;
+		    margin-left: 56px;
+		    margin-top: 80px;
+		    height: 440px;
+		    overflow: hidden;
+	    }
+    }
+    .lg_left{
+	    position: relative;
+	    width: 356px;
+	    float: left;
+	    display: inline;
+	    padding: 0 0 30px 44px;
+	    background-color: #ffeceb;
+	    margin-top: 80px;
+	    @include opacity();
+	    filter: alpha(opacity=90);
+	    .login_mod_tab{
+			height: 70px;
+			margin-left: -38px;
+			a{
+			    height: 43px;
+			    line-height: 42px;
+			    text-align: center;
+			    font-size: 14px;
+			    font-weight: 700;
+			    color: #3c3c3c;
+			}
+			.fl_mod{
+			    width: 100%;
+				// border-bottom: 1px solid #ccc;
+				.lo_mod{
+				    display: block;
+				    margin: 10px auto 0;
+				}
+				.tab_on{
+				    color: #fe617a;
+				    height: 41px;
+				    border-bottom: 2px solid #ff4066;	
+				}
+				.eb_mod{
+				    display: block;
+			    	margin: 10px 30px 0;
+				}   
+			}
+	    }
+	    .error_tip{
+    	    background: url(https://s10.mogucdn.com/pic/140408/o613k_kqzfunswozbg2s2ugfjeg5sckzsew_16x16.png) 12px no-repeat #fffff8;
+		    border: 1px solid #ffd797;
+		    height: 30px;
+		    line-height: 30px;
+		    color: #ff1877;
+		    width: 273px;
+		    padding-left: 40px;
+		    margin-bottom: 9px;
+		    display: none;
+	    }
+	    .lg_name{
+	    	position:relative;
+	    }
+	    .lg_item{
+    	    margin-bottom: 15px;
+	    }
+	    .pwd_text{
+	    	height: 40px;
+    		width: 300px;
+	    }
+	    .md{
+	    	position: relative;
+    		margin-bottom: 15px;
+    		.get_tel_code{
+			    display: inline-block;
+			    width: 110px;
+			    height: 42px;
+			    line-height: 42px;
+			    text-align: center;
+			    margin-right: 10px;
+			    color: $bg2;
+			    background-color: $bg4;
+			
+    		}
+	    }
+	    .lg_login{
+	    	padding-top: 10px;
+	    	.sub{
+	    		display: inline;
+			    float: left;
+			    border: none;
+			    width: 314px;
+			    height: 40px;
+			    background: $bg4;
+			    border-radius: 2px;
+			    cursor: pointer;
+			    color: $bg2;
+	    	}
+	    }
+	   	.ot_login{
+   		    margin-top: 20px;
+   		    .ot_btn{
+   		    	padding-top: 6px;
+   		    	.mr_42{
+	    		    margin-right: 47px;
+	    		    img{
+    		    	    vertical-align: top;
+    					margin-right: 6px;
+    					display: inline-block;
+	    		    }
+   		    	}
+   		    }
+	   	}
+	   	.lg_reg{
+   		    padding-top: 20px;
+		    padding-right: 44px;
+		    text-align: right;
+		    a{
+    	    	text-decoration: underline;
+    			color: #959595;
+		    }
+		    a:nth-of-type(1){
+			    margin-right: 20px;
+		    }
+		    a:nth-of-type(2){
+		        color: #fe5979;
+		    }
+	   	}
+    }
+}

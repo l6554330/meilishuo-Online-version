@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>购物车</title>
+	<link rel="stylesheet" href="css/scss.css">
+	<link rel="icon" href="https://s10.mogucdn.com/mlcdn/c45406/170612_02i668aijej2cb21ji56g98a218dg_48x48.png">
+</head>
+<body style="background-color: #f4f4f4">
+	<!-- 通用工具栏 start -->
+	<div class="hrader" id="global-head">
+		<div id="M_PC_top_nav">
+			<div id="M_PC_top_nav_container">
+				<div class="w inne">
+					<ul>
+						<li class="go-home">
+							<a href="index.html">
+								<em class="hom"></em>
+								美丽说首页
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<em class="weixin"></em>
+								微信登录
+							</a>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<em class="qq"></em>
+								QQ登录
+							</a>
+						</li>
+						<li>
+							<a href="register.html">
+								登录
+							</a>
+						</li>
+						<li>
+							<a href="zhuce.html">
+								注册
+							</a>
+						</li>
+						<li class="drop">
+							<a href="javascript:;">
+								<em class="collect"></em>
+								我的收藏 
+							</a>
+							<ul class="down">
+								<li>
+									<a target="_blank">
+										收藏宝贝
+									</a>
+								</li>
+								<li>
+									<a target="_blank">
+										收藏店铺
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li class="drop">
+							<a href="javascript:;">
+								<em class="cart"></em>
+								我的购物车  
+								<span class="cart-num">1</span>
+							</a>
+							<div class="down"> 
+								<ul class="cart-goods">
+								<!-- <li> 
+									<a href="javascript:;" target="_blank" style="padding: 0; float: left;"> 
+										<span class="cart-goods-img" style="background-image: url(http://s3.mogucdn.com/mlcdn/917393/171027_81cljkib5880fgb9i7ih8f2eec049_640x900.jpg)">
+											
+										</span> 
+									</a> 
+									<div class="cart-goods-desc"> 
+										<p> 
+											<a href="javascript:;" target="_blank" style="padding: 0; float: left;"> 
+												<span class="cart-goods-title">加厚抓绒卫衣女17冬季新款学院风宽松潮字母圆领 152809</span> 
+											</a> 
+											<span class="cart-goods-price">￥79</span> 
+										</p> 
+										<p class="cart-goods-info"> 
+											<span class="cart-goods-title">  
+												<span>颜色:姜黄</span>
+												 &nbsp;&nbsp;  
+												 <span>尺码:均码</span> 
+												 &nbsp;&nbsp;  
+												</span> 
+												<em class="del-cart-goods" data-stock="1wegpze"></em> 
+											</p> 
+										</div>
+									</li> --> 
+								</ul>
+								<p class="cart-account"> 
+									<span>购物车里还有<a class="num" href="javascript:;" target="_blank">1</a>
+									件商品
+									</span> 
+									<a class="check-cart" href="javascript:;" target="_blank">查看购物车</a> 
+								</p> 
+							</div>
+						</li>
+						<li>
+							<a href="javascript:;">
+								<em class="order"></em>
+								我的订单
+							</a>
+						</li>
+						<li class="drop">
+							<a href="javascript:;">
+								帮助中心
+								<em class="arrow"></em>
+							</a>
+							<ul class="down">
+								<li>
+									<a href="javascript:;">卖家服务</a>
+								</li>
+								<li>
+									<a href="javascript:;">商家服务</a>
+								</li>
+								<li>
+									<a href="javascript:;">规则中心</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="javascript:;" class="last">
+								商家后台
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- 通用工具栏 end -->
+	<!-- 主体 start -->
+	<div class="w" id="body_wrap">
+		<div class="g-header clear">
+		    <div class="g-header-in w clear">
+		        <div class="process-bar">
+		            <div class="md_process md_process_len4">
+		                <div class="md_process_wrap md_process_step1_5">
+		                    <div class="md_process_sd"></div>
+		                    <i class="md_process_i md_process_i1">
+		                        1                
+		                        <span class="md_process_tip">购物车</span>
+		                    </i>
+		                    <i class="md_process_i md_process_i2">
+		                        2                
+		                        <span class="md_process_tip">确认订单</span>
+		                    </i>
+		                    <i class="md_process_i md_process_i3">
+		                        3                
+		                         <span class="md_process_tip">支付</span>
+		                    </i>
+		                    <i class="md_process_i md_process_i4">
+		                        <img src="" width="23" height="23" alt="">
+		                        <span class="md_process_tip">完成</span>
+		                    </i>
+		                </div>
+		            </div>        
+		        </div>
+		        <div class="logo logo-cart"></div>
+		    </div>
+		</div>
+	   	<div class="g-wrap w">  
+		   	<ul class="clear cart_slide pb20" id="cartSlide"> 
+		   		<li> 
+		   			<a href="javascript:;" url="0" class="mr10 cart_slide_item cartSlideItemAll cart_slide_item_cur  "> 
+		   				全部商品 
+		   				(<span class="num">1</span>) 
+		   			</a> 
+		   		</li> 
+		   		<li class="cartslide-line">|</li> 
+		   		<li> 
+		   			<a href="javascript:;" url="1" class="mr10 cart_slide_item cartSlideItemCut cart_slide_not_allowed"> 
+		   			优惠 
+		   			(<span class="num">0</span>) 
+			   		</a> 
+			   	</li> 
+			   	<li class="cartslide-line">|</li> 
+			   	<li> 
+			   		<a href="javascript:;" url="2" class="mr10 cart_slide_item cartSlideItemLess  cart_slide_not_allowed"> 
+			   			库存紧张 
+			   			(<span class="num">0</span>) 
+			   		</a> 
+			   	</li> 
+		   	</ul>  
+		   <!-- 不为空的情况 --> 
+		   <div class="cart_wrap cart_nobdbtm"> 
+		   		<div class="cart_page_wrap" id="cartPage"> 
+		   			<input type="hidden" name="shop_domain" id="shop_domain" value=""> 
+		   			<input type="hidden" name="data_props" id="data_props" value=""> 
+		   			<input type="hidden" id="coudan_type" value="0"> 
+		   			<!-- 表格 --> 
+		   			<table class="cart_table" id="cartOrderTable"> 
+		   				<thead> 
+		   					<tr> 
+		   						<th class="cart_table_check_wrap cart_alleft pl10"> 
+		   							<input type="checkbox" name="s_all" class="s_all tr_checkmr" id="s_all_h"> 
+		   							<label for="s_all_h">全选</label> 
+		   						</th> 
+		   						<th class="cart_table_goods_wrap">商品</th> 
+		   						<th class="cart_table_goodsinfo_wrap">商品信息</th> 
+		   						<th>单价(元)</th> 
+		   						<th class="cart_table_goodsnum_wrap">数量</th> 
+		   						<th class="cart_table_goodssum_wrap">小计(元)</th> 
+		   						<th class="cart_table_goodsctrl_wrap">操作</th> 
+		   					</tr> 
+		   				</thead> 
+		   				<tbody>    
+		   					<tr id="shoptit_1172jnw8" data-bid="1172jnw8" data-sellerid="1zyeb84" class=""> 
+		   						<!-- id 是店铺id --> 
+		   						<td colspan="7" class="cart_group_head"> 
+		   							<!-- data-bid 这里 店铺id -->  
+		   							<input type="checkbox" class="s_shopall tr_checkmr" data-bid="1172jnw8" name="s_shopall"> 
+		   							<label for="" class="cart_lightgray">
+			   							店铺：
+			   						</label>  
+			   						<a href="javascript:;" target="_blank" class="cart_hoverline">美丽优选</a>  
+			   						<a href="javascript:;" data-shopid="1172jnw8" class="mlstalk_widget_btn">联系客服</a>   
+			   						<!-- 有更多满减信息 -->  
+			   					</td> 
+			   				</tr>  
+			   				<tr class="cart_mitem ui-hide"> 
+			   					<td class="cart_table_goods_wrap">
+			   						<!-- 商品 --> 
+			   						<a href="javascript:;" target="_blank" class="cart_goods_img"> 
+			   							<img class="cartImgTip" src="http://s3.mogucdn.com/mlcdn/917393/171027_81cljkib5880fgb9i7ih8f2eec049_640x900.jpg_100x100.jpg" width="78" height="78" alt="加厚抓绒卫衣女17冬季新款学院风宽松潮字母圆领 152809">  
+			   						</a> 
+			   						<!-- 商品title --> 
+			   						<a href="javascript:;" target="_blank" class="cart_goods_t cart_hoverline" title="加厚抓绒卫衣女17冬季新款学院风宽松潮字母圆领 152809"> 
+				   						加厚抓绒卫衣女17冬季新款学院风宽松潮字母圆领 152809 
+				   					</a>
+				   					<p class="remind_btm"> 
+				   						<!-- 降价信息 -->  
+				   					</p> 
+				   				</td> 
+				   				<td>  
+				   					<p class="cart_lh20">颜色：姜黄</p>  
+				   					<p class="cart_lh20">尺码：均码</p>  
+				   				</td> <td class="cart_alcenter">
+				   					<!-- 单价 -->  
+				   					<p class="cart_lh20 cart_bold cart_data_sprice" data-price="790"> 79.00 </p>   
+				   				</td> 
+				   				<td class="cart_alcenter">
+				   					<!-- 数量 -->  
+				   					<div> 
+				   						<div class="cart_num cart_counter"> 
+				   							<input type="text" class="cart_num_input cart_bold" maxlength="3" value="2">  
+				   							<span class="cart_num_add"></span> 
+				   							<span class="cart_num_reduce"></span>   
+				   						</div> 
+				   					</div>   
+				   				</td> 
+				   				<td class="cart_alcenter">
+				   					<!-- 小计 --> 
+				   					<p class="cart_deep_red cart_font16 item_sum">158.00</p> 
+				   				</td> 
+				   				<td class="cart_alcenter">
+				   					<!-- 操作 --> 
+				   					<a href="javascript:;" class="cart_hoverline delete">删除</a> 
+				   				</td> 
+				   			</tr>   
+				   			<tr class="J_mundo m-undo"> 
+				   				<td colspan="7"> 
+				   					<div class="m-undo-wrap">
+				   						成功删除 
+				   						<span class="J_num">1</span> 
+				   						款商品，如有误，可
+				   						<a href="javascript:;" class="J_undo">撤销本次删除</a>
+				   					</div> 
+				   				</td> 
+				   			</tr> 
+				   		</tbody> 
+			   		</table> 
+			   	<!-- 表格 end -->
+		   		</div> 
+			   	<div class="cart_page_wrap" id="cartEmptyPage" style="display:none;"> 
+				   	<div class="cart_empty"> 
+				   		<div class="cart_empty_icon">
+				   			
+				   		</div> 
+				   		<h5 class="mb20">您的购物车还是空的，赶快去挑选商品吧！</h5> 
+				   		<ul class="cart_empty_list"> 
+					   		<li>
+					   			去看看大家都喜欢的
+					   			<a href="javascript:;" class="cart_red cart_uline">
+					   				最热
+					   			</a>
+					   		</li> 
+					   		<li>
+					   			去看看正在折扣中的优品
+					   			<a href="javascript:;" class="cart_red cart_uline">
+						   			首页
+						   		</a>
+						   	</li> 
+				   		</ul> 
+				   	</div> 
+			   	</div> 
+		   	</div>  
+		   	<div class="md-discount" id="J_productPay">
+	   		<div class="banklist-line banklist-btm">
+	   			<div class="banklist-item J_banklistItem J_2step2 s-banklist-item-select">
+	   				<i class="product-icon icon-wechatPay"></i>
+					<span class="earnname">
+					    微信支付
+				  	</span>
+				  	<span class="paynum payhover">
+					    实付金额：<span class="num">￥75.20</span>
+					</span>
+					<div class="paytab-main J_paytabMain J_paytabMain_normal clearfix fn-wechatPay">
+						<div class="code2-wechat clearfix fn-wechat-detail">
+					        <div class="code-wrap">
+					          <img class="code J_wechatCode" width="230" height="230" src="images/weixin.png" alt="">
+					        </div>
+					        <div class="tip">
+					          	<h5>请使用微信扫描二维码添加好友<br>付款以完成支付</h5>
+					      	</div>
+						</div>
+					</div>
+	   			</div>
+	   			
+	   		</div>
+		</div>
+		   	<div class="cart_paybar w" id="cartPaybar"> 
+		   		<a href="javascript:;" class="cart_paybtn fr cart_paybtn_disable" id="payBtn">去付款</a> 
+		   		<div class="cart_paybar_info_cost cart_deep_red cart_bold cart_font26 cart_money fr goodsSum">¥ 0.00</div> 
+		   		<div class="cart_paybar_info cart_pregray fr"> 
+		   			共有 
+		   			<span class="cart_deep_red goodsNum">0</span> 
+		   			款商品，总计： 
+		   		</div>
+		   		<div class="cart_paybar_vmbox">
+		   			<a href="javascript:;" class="mr10 cart_uline cart_pregray" id="cartRemoveChecked">删除</a> 
+		   			<a href="javascript:;" class="mr10 cart_uline cart_pregray" id="cartRemoveUnuse">清空失效商品</a> 
+		   		</div> 
+		   	</div> 
+	   	</div>
+	   	
+	</div>
+	<!-- 主体 end -->
+	<!-- 尾部  start-->
+	<div class="g-footer">
+	    <p title="mofa015027">
+	        <a href="http://www.meilishuo.com" target="_blank">美丽说</a>
+	        © 2016 Meilishuo.com,All Rights Reserved.
+	    </p>
+	    <div class="icons">
+	        <a class="vs" href="javascript:;"></a>
+	        <a class="mc" href="javascript:;"></a>
+	        <a class="up" href="javascript:;"></a>
+	        <a class="pa" href="javascript:;"></a>
+	        <a class="kx" href="javascript:;"></a>
+	        <a class="pc" href="javascript:;"></a>
+	    </div>
+	</div>
+	<!-- 尾部  end-->
+	
+</body>
+</html>
+<script src="scripts/require.js"></script>
+<script src="scripts/shoppingIndex.js"></script>

@@ -1,0 +1,44 @@
+/*
+* @Author: 周海明
+* @Date:   2018-01-19 14:12:50
+* @Last Modified by:   周海明
+* @Last Modified time: 2018-01-19 14:57:36
+*/
+.impowerBox{
+    line-height: 1.6;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle; 
+    padding-top: 50px;
+    .title{
+	    text-align: center;
+		font-size: 20px;
+    }
+    img{
+		width: 280px;
+		margin-top: 15px;
+		border: 1px solid #E2E2E2; 
+		display: inline-block;
+	}
+	.info{
+	    width: 280px;
+    	margin: 0 auto;
+		.status{
+	        margin-top: 15px;
+		    background-color: #232323;
+		    border-radius: 100px;
+		    text-align: center;
+		    padding: 7px 14px;
+		    @include radius();
+		    @include shadow();
+		    p{
+	    	    font-size: 13px;
+	    	    margin: 0;
+	    		font-weight: 400;
+		    }
+	}
+	}
+}
