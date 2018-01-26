@@ -95,7 +95,7 @@ define(["jquery", "cookie"], function ($) {
 		}, {
 			key: "hover",
 			value: function hover() {
-				if ($.cookie("shopping") != "[]") {
+				if ($.cookie("shopping") != "[]" && $.cookie("shopping")) {
 					this.cart_account.show();
 					this.cart_account.parent().css("border", "1px solid #eee");
 					this.cart_num.show();
