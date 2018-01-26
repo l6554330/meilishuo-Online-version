@@ -4,7 +4,7 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-define(["jquery"], function ($) {
+define(["jquery", "cookie"], function ($) {
 	// 点击跳转详情页
 	var Particulars = function () {
 		function Particulars() {
@@ -38,6 +38,10 @@ define(["jquery"], function ($) {
 				this.s_shopall.on("click", $.proxy(this.cheackStore, this));
 				this.cart_thcheck.on("click", $.proxy(this.cheackOne, this));
 
+				// 判断购物车是否有物品
+				this.cart_account = $(".cart-account");
+				this.cart_num = $(".cart-num");
+
 				// 和
 				this.pop;
 				this.goodsSum = $(".goodsSum");
@@ -57,6 +61,8 @@ define(["jquery"], function ($) {
 				this.J_productPay = $("#J_productPay");
 				this.payhover = $(".payhover .num");
 				this.payBtn.on("click", $.proxy(this.sum, this));
+
+				this.hover();
 			}
 		}, {
 			key: "cart",
@@ -84,6 +90,19 @@ define(["jquery"], function ($) {
 						});
 						location.reload();
 					}
+				}
+			}
+		}, {
+			key: "hover",
+			value: function hover() {
+				if ($.cookie("shopping") != "[]") {
+					this.cart_account.show();
+					this.cart_account.parent().css("border", "1px solid #eee");
+					this.cart_num.show();
+				} else {
+					this.cart_account.hide();
+					this.cart_account.parent().css("border", "none");
+					this.cart_num.hide();
 				}
 			}
 		}, {
